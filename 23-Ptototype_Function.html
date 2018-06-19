@@ -1,0 +1,28 @@
+<html>
+<head> <title>Prototype Function   </title>
+</head>
+<body>
+  <script type="text/javascript">
+  // Prototype function
+  // when add prototype function another that time can't use arrow function its give error.
+
+  function Wizard(name,house,pet){
+    this.name=name;
+    this.house=house;
+    this.pet=pet;
+    this.greet=() => `I m ${this.name} form ${this.house}`
+  }
+
+  Wizard.prototype.pet_name;            // add propertie
+  Wizard.prototype.info=function(){     // add method but not use arrow function
+    return `i have a ${this.pet} named ${this.pet_name}`
+  };
+
+  let harry=new Wizard("Harry Potter","Gryffindor","Owl");
+  harry.pet_name="Hedwin";
+  console.log(harry.info());
+
+
+  </script>
+</body>
+</html>

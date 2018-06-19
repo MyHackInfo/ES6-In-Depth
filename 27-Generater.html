@@ -1,0 +1,57 @@
+<html>
+<head> <title>   </title>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+
+// Generater is function and use (*) this front side
+// We can perform try ,catch and throw exception in Generater
+// Return some value form Generater
+
+        function *createIterator(){
+            let first= yield 1;
+            // return 34 ;                         // here return we perform
+            let second;
+            try{                                   // this is try block
+              yield first + 2;
+            }catch(ex){                            // this is catch block
+              second=6;
+            } yield second + 3; }
+            let iterator= createIterator();
+            console.log(iterator.next());
+            console.log(iterator.next(4));
+            //console.log(iterator.next(6));
+            //console.log(iterator.next(6));
+            console.log(iterator.throw(new Error("This is fucking think"))) // this is throw block */
+
+
+// Delegating Generaters with the return value;
+  function *createNumberIterator(){
+    yield 1;
+    yield 2;
+    return 3;
+  }
+   function *createRepeatingIterator(count){
+     for(let i=0; i<count; i++){
+       yield "repeat -" + i;
+     }
+     yield "narsi"
+   }
+
+   function *createCombinedIterator(){
+     let result= yield *createNumberIterator();
+     yield *createRepeatingIterator(result);
+   }
+
+   let iterator=createCombinedIterator();
+   console.log(iterator.next());
+   console.log(iterator.next());
+   console.log(iterator.next());
+   console.log(iterator.next());
+   console.log(iterator.next());
+   console.log(iterator.next());
+  </script>
+</body>
+</html>

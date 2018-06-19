@@ -1,0 +1,35 @@
+<html>
+<head> <title>class inheriting</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    // class inheriting
+    // we use "extends" keyword for inheriting super class
+    // we use super() keyword for access value of parent class 
+
+    class mobile {
+      constructor(name,price,color) {
+        this.name=name;
+        this.price=price;
+        this.color=color;
+        }
+        work(){
+          console.log('this is y1 and its work proper');
+        }
+    }
+
+    class mobile1 extends mobile{
+      constructor(name,price,color,look){
+        super(name,price,color);
+        this.look=look;
+      }
+
+    }
+
+    let get=new mobile1('y1',10000,'golden','smart');
+    console.log(get);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head> <title> Closures </title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    // Closures
+
+    let call=() => {
+      let sec='this is es6';
+      let reveal=() => {
+        console.log(sec);
+      }
+      return reveal();
+    }
+    let un=call();
+    console.log(un)
+
+    // function factories
+    const gun=x => y => z => a => x*y*z*a;
+    let f1=gun(5);
+    let f2=f1(4);
+    let f3=f2(3);
+    console.log(f3(2));
+
+  </script>
+</body>
+</html>

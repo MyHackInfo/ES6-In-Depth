@@ -1,0 +1,99 @@
+
+<html>
+<head><title>Promise</title> </head>
+<body>
+  <script type="text/javascript">
+
+        // 1 promises in asynchronous programing ********
+      // let pi= new Promise(function(resolve,reject){
+      //   resolve(786);
+      // });
+      //   // 2 chaine promise with value *********
+      // pi.then(function(value){
+      //   console.log(value);
+      // }).then(function(){
+      //   console.log("yes its");
+      // }).then(function(){
+      //   console.log("yes this is ");
+      // });
+
+      // //  3 Unchained promise *************
+      //   let p1=pi.then(function(value){
+      //   console.log(value);
+      //   })
+      //   let p2=p1.then(function(){
+      //   console.log("yes its");
+      //   })
+      //   let p3=p2.then(function(){
+      //   console.log("yes this is ");
+      // });
+
+      //  // 4 Catching Error in Promise ********
+      // let show1=new Promise(function(resole,reject){
+      //   //resole(40);
+      //     throw new Error('fuck like animal');// we can use "reject" like throw error
+      // })
+      // show1.then(function(value){
+      //   throw new Error('fuck this think');
+      // }).catch(function(error){
+      //   console.log(error.message);
+      // });
+
+      //  // 5 Reject Promise with value **********
+      // let rej=new Promise(function(resolve,reject){
+      //   reject(40);
+      // });
+      // rej.catch(function(value){
+      //   console.log(value);
+      //   return value +1;
+      // }).then(function(value){
+      //   console.log("finished -"+value);
+      //   return value +1;
+      // });
+
+      //  // 6 Promise.all() Method is take only array on base "resolve" and "reject"
+      // let a=new Promise(function(resolve,reject){
+      //   resolve(40);
+      // });
+      // let b=new Promise(function(resolve,reject){
+      //   resolve(41);
+      //   //reject(41);
+      // });
+      // let c=new Promise(function(resolve,reject){
+      //   resolve(42);
+      // })
+      //
+      // let d=Promise.all([a,b,c]);
+      // d.then(function(value){
+      //   //d.catch(function(value){
+      //   //console.log(Array.isArray(value));
+      //   console.log(value[0]);
+      //   console.log(value[1]);
+      //   console.log(value[2]);
+      // });
+
+      //  // 7 Promise.race() Method is take same as array like all()method do
+      // let a=new Promise(function(resolve,reject){
+      //   resolve(40);
+      // });
+      // let b=new Promise(function(resolve,reject){
+      //   resolve(41);
+      //   //reject(41);
+      // });
+      // let c=new Promise(function(resolve,reject){
+      //   resolve(42);
+      // })
+      //
+      // let d=Promise.race([a,b,c]);
+      // d.then(function(value){
+      //   console.log(value);
+      // });
+      //
+
+
+
+
+  </script>
+
+</body>
+</html>

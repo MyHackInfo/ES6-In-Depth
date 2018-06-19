@@ -1,0 +1,58 @@
+<html>
+<head> <title> Let and const  </title>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+    //In ES6 let and const use for assign value in variable and constent
+      // 1 let ********
+      // let work same as var keyword.
+      // But let use in block scoping for block Binding
+        let ag=34;
+        ag="narsi ";
+        ag+=20;
+        console.log(ag);
+      //  Example of ****var***** keyword in Block scoping
+                  var get=100;
+                  {
+                     var get= 23;
+                    console.log('in block scope',get);
+                  }
+                  console.log('out of block scope',get);
+
+      // Example of ****let***** keyword in Block scoping
+                  let gets=200;
+                  {
+                     let gets= 50;
+                    console.log('in block scope',gets);
+                  }
+                  console.log('out of block ',gets);
+
+
+      // // 2 const ********
+      // 1 const are use for constent value
+      // 2 When we try to ReAssign value in const then give error
+      // 3 But we put some value using Push() method on const
+      const show=[1,2,4];
+      //show=[1,2,3];             //ReAssign the value but show error
+      show.push(3);               // push value
+      show.push([5,6,7,7]);       //push array in const using push() method
+      console.log(show);
+
+      // Example of *****const****** keyword in Block scoping
+                    const age=20;
+                    {
+                      const age=21;
+                      console.log('in block age is : ',age);
+                    }
+                    console.log("out of block age is : ",age);
+
+
+
+
+
+
+  </script>
+</body>
+</html>

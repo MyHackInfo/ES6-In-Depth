@@ -1,0 +1,26 @@
+<html>
+<head> <title> Spread Operator And Rest-Parameters </title>
+</head>
+<body>
+  <script type="text/javascript">
+  // 1 Spread Operator ***********
+    // spread Operator symbole (...) three dot.
+        let a=[1,2,3,4,5,6];
+        let b=[9,8,7,...a];
+        console.log(b);
+
+
+
+  // 2 Rest-Parameters
+    // 01- Its same as spread Operator ... three dot
+    // 02- Rest parameter must be last formal parameter
+    // 03- Multiple parameter calls into one array
+      function num(...a){
+        console.log(...a)
+      }
+      num([1,2,3,4,5]);
+
+
+  </script>
+</body>
+</html>

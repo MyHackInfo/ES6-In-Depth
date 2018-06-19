@@ -1,0 +1,24 @@
+<html>
+<head> <title>  Number checking Method </title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    // Number checking Method
+      // 1 *****isFinite()******
+    const addToCart=(item,number) => {
+      return Number.isFinite(number);
+    }
+    console.log(addToCart('shirt',456));
+
+      // 2 *****isSafeInteger()*****
+      const addToCarts=(item,number) => {
+        return Number.isSafeInteger(number);
+      }
+      console.log(addToCarts('shirt',Math.pow(2,54)));
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<body>
+		<div id="name"></div>
+		<img src="" id="image"/>
+
+		<script type="text/javascript">
+			
+			let url1 = "https://jsonplaceholder.typicode.com/albums/1/photos";
+			fetch(url1)
+			.then(response => response.json())
+			.then(data => {
+				console.log(data[0].title);
+				document.getElementById('name').innerHTML = data[0].title;
+				document.getElementById('image').src=data[0].url;
+			});
+		</script>
+	</body>
+</html>
